@@ -1,0 +1,74 @@
+TAHA MUZAMMIL 
+456279
+
+TASK 1
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int y,x;
+	for(int x=0; x<10; x++){
+	y=y+x;
+}
+	cout<<"the sum of first 10 natural numbers is  " << y <<endl;
+	
+}
+
+TASK 2
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"enter any number you need a table of  "<<endl;
+	cin>>a;
+	for(int b=1; b<=10; b++){
+		c=a*b;
+		cout<<a<<'x'<<b<<'='<<c<<endl;
+	}
+}
+
+TASK 3
+
+#include <iostream>
+using namespace std;
+unsigned long long factorial(unsigned long long X) {
+  if (X == 0) {
+    return 1;
+  } else {
+    return X * factorial(X - 1);
+  }
+}
+
+int main() {
+  unsigned long long number;
+  cout << "Enter a number to find the factorial of: ";
+  cin >> number;
+
+  cout << "The factorial of " << number << " is: " << factorial(number) << endl;
+
+  return 0;
+}
+
+TASK 4
+
+#include<iostream>
+using namespace std;
+
+int main(){
+		int num1, sum, num2, count;
+	cout<<"Enter Number 1: ";
+	cin>>num1;
+	cout<<"Enter Number 2: ";
+	cin>>num2;
+	cout<<num1<<", "<<num2<<", ";
+	for(count=0; count<6; count++){
+	sum=num1+num2;
+	num1=num2;
+	num2=sum;
+	cout<<sum<<", ";
+	}
+}
+
